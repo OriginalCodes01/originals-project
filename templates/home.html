@@ -2,55 +2,46 @@
 <html>
   <head>
 <title> Originals page</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-      h1{
-        font-size:40px;
-        font-family:calibri;
-        font-weight:bold;
-        color:rgb(180,180,200);
-        text-align:center
-      }
-
-        #banner {
-          width: 100%;
-          height: 360px;
-          object-fit: cover;
-        
-      }
-      h2{
-        font-size:32px;
-        font-family:calibri;
-        font-weight:bold;
-        color:rgb(50,50,50);
-        text-align:center
-        
-      }
-      p{
-        font-family:normal;
-        color: rgb(80,80,80)   
-      
-      #container {
-        max-width: 720px;
-        margin: 0 auto 0 auto:
-      }
+      #banner{
+        height:360px;
+        width:100%;
+        object-fit:cover;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-    <h1>ORIGINAL'S PAGE</h1>
-    <img id="banner" src= "https://52ead570-e019-4d6e-9ece-dc541e0a032f-00-3mgw7no5domp4.riker.replit.dev/static/self.jpg">
+    <div class = "container">
+    <h1 class= "text-center mt- 2 mb- 4">ORIGINAL'S PAGE</h1>
+    <img class="img-fluid" id="banner" 
+      src= "https://52ead570-e019-4d6e-9ece-dc541e0a032f-00-3mgw7no5domp4.riker.replit.dev/static/self.jpg">
       
-      <h2>About Original</h2>
+      <h2 class="text-center mt- 2 mb- 4">About Original</h2>
     
-    <p>
+    <p class="lead">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac urna at quam consequat faucibus. In laoreet accumsan porttitor. Nunc et massa metus. Vestibulum diam odio, placerat aliquam ullamcorper ac, rutrum et eros. Quisque ornare nunc ac velit hendrerit condimentum. Cras sed arcu nec turpis pulvinar venenatis non id neque. Sed ipsum diam, facilisis non libero ut, aliquet posuere dui. In at semper quam. Proin vitae laoreet tortor. Proin et gravida mauris. Ut a egestas sem, at consectetur risus. Vivamus egestas erat sit amet risus rhoncus molestie ut eget metus. In eu diam iaculis, vestibulum dolor a, sodales eros.
     </p>     
-    <h2>Original's Skills and Talents</h2>
-    <P>to do-show talents here</P>
-      <div style="text-align:center;">
-    <button> Contact me </button>
-         <p>Copyright 2024,Original.</p>
+    <h2 class="text-center mt- 2 mb- 4">Original's Skills and Talents</h2>
+    <div>
+      {% for Talents in Talents %}
+      <div class="border-bottom row"  style="margin-bottom:16px; padding-bottom:4px">
+         <div class="col-9" >
+        <h4 
+          style="color:rgb(120,120,120); margin-bottom:4px;">
+          {{Talents["title"]}} 
+        </h4 
+          <div>
+        <button type="button" class="btn btn-outline-primary">Read</button>
+      </div>
+           
+      {% endfor %}
+      <div class="text-center">
+    <button class="btn btn-primary btn-lg""> Contact me </button>
+         <p class="mt-4">Copyright 2024,Original.</p>
       </div>
     </div>
    
