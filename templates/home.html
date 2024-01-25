@@ -27,19 +27,26 @@
     </p>     
     <h2 class="text-center mt- 2 mb- 4">Original's Skills and Talents</h2>
     <div>
-      {% for Talents in Talents %}
-      <div class="border-bottom row"  style="margin-bottom:16px; padding-bottom:4px">
-         <div class="col-9" >
+      {% for talents in talents %}
+      <div class="border-bottom row" 
+        style="margin-bottom:16px;padding-bottom:8px">
+         
         <h4 
           style="color:rgb(120,120,120); margin-bottom:4px;">
-          {{Talents["title"]}} 
-        </h4 
-          <div>
-        <button type="button" class="btn btn-outline-primary">Read</button>
-      </div>
+          {{talents["title"]}} 
+        </h4>  
+          
+           <button type="button" class="btn btn-outline-primary">Read</button>
            
-      {% endfor %}
-      <div class="text-center">
+           </div>
+
+        {% endfor %}
+        
+      </div>
+          
+
+      </div>
+            <div class="text-center">
     <button class="btn btn-primary btn-lg""> Contact me </button>
          <p class="mt-4">Copyright 2024,Original.</p>
       </div>
