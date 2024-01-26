@@ -34,7 +34,7 @@ def hello_world():
                          talents=TALENTS,
                         page_name="ORIGINAL")
   
-@app.route("/talents")
+@app.route("/api/talents")
 def list_talents():
   return jsonify(TALENTS)
 
