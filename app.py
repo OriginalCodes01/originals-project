@@ -5,27 +5,23 @@ TALENTS = [
   {
     "id": 1,
     "title": "Film making" 
-    },
- {
-    "id": 1,
-    "title": "Oration" 
   },
-{
+ {
   "id": 2,
   "title": "Video editing" 
-},
-{
+ },
+ {
   "id": 3,
   "title": "Programming" 
-},
-{
+ },
+ {
   "id": 4,
   "title": "Fashion" 
-},
-{
+ },
+ {
   "id": 5,
   "title": "Sweet man" 
-}
+ }
          ]
 
 @app.route("/")
